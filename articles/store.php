@@ -1,7 +1,6 @@
 <?php
 
 if(!defined('RESTRICTED'))exit('No direct script access allowed!');
-$model = new ArticleModel;
 
 // gather data
 $title = (! empty($_POST['title'])) ? $_POST['title'] : '';

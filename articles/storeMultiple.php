@@ -15,7 +15,6 @@ $created_at = date('Y-m-d H:i:s');
 $updated_at = date('Y-m-d H:i:s');
 $database = new database;
 $db = $database->connection();
-$model = new ArticleModel;
 try {
 	$db->beginTransaction();
 

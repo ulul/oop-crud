@@ -10,7 +10,6 @@ $author = (! empty($_POST['author'])) ? $_POST['author'] : '';
 $updated_at = date('Y-m-d H:i:s');
 
 // validate data
-$model = new ArticleModel;
 try {
 	$model->editArticle($id,$title,$content,$author,$updated_at);
 	flash('article_flash', 'Article has been updated', 'success');
