@@ -6,7 +6,7 @@ if(!defined('RESTRICTED'))exit('No direct script access allowed!');
 class database 
 {
 	
-	function connection()
+	static function connection()
 	{
 		try {
 			$conn = new PDO('mysql:host=localhost;dbname=ongisschool_crud', 'root', 'root');

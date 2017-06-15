@@ -1,8 +1,9 @@
 <?php
 if(!defined('RESTRICTED'))exit('No direct script access allowed!');
 
-class ArticleModel extends database
+class ArticleModel
 {
+	private $db;
 	/**
 	* @param [type] $data [description]
 	*/
